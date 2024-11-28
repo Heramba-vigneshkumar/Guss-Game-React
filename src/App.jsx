@@ -20,7 +20,7 @@ function App() {
       <>
         <div className="container">
                 <marquee className="head">
-                    Guss the number between 1 to 10
+                    Guess the number between 1 to 10
                 </marquee>
 
                 <div className='content'>
