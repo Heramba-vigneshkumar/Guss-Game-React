@@ -2,7 +2,11 @@
 
 body{
     font-family: "Parkinsans", sans-serif;
-    background-color: black;
+    background-color: rgb(89, 89, 89);
+    width: 100vw;
+    min-width: 320px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 *{
@@ -11,19 +15,13 @@ body{
 }
 
 .container{
-    background: url(./gussbg.gif) no-repeat;
-    background-size: cover; 
-    width: 70vw;
-    height: 70vh;
-    border-radius: 5px;
-    box-shadow:30px 30px 80px black; 
-    margin: 50px auto;
+    height: calc(100vh - 257px);
 }
  
 .head{
     font-weight: 900;
     font-size: 3rem;
-    margin: 0px auto 20px;
+    padding-top: 20px;
     color: #d9ff00;
     background: transparent;
     text-shadow: 5px 5px 5px  #fc022b, 
@@ -36,17 +34,24 @@ body{
 .content{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 331px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 input{
     border: none;
     font-weight: bold;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     background-color: white;
     width: 100px;
-    height: 100px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
-    box-shadow: inset 20px 20px 60px #00a2ff;
+    box-shadow: inset .5em .5em 60px #00a2ff;
     text-align: center;
 }
 
@@ -60,24 +65,45 @@ input::-webkit-outer-spin-button{
 }
 
 input:focus{
-    box-shadow: inset 20px 20px 60px #013e61;
+    box-shadow: inset .5em .5em 60px #2a98d7;
+    filter: drop-shadow(0px 0px 20px #1aa8f9);
 }
 
 .Tom{
-    height: 200px;
-    width: 180px;
-    vertical-align: top;
+    width: 150px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: -7%;
+    bottom: -16%;
 }
 
 .Jerry{
-    height: 100px;
-    width: 70px;
-    vertical-align: top;
+    width: 80px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 16%;
+    bottom: 20%;
+    transform: rotate(9deg);
 }
 
 #result {
-    margin: 18% auto 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #002fff;
     width: fit-content;
+}
+
+aside{
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+button{
+    background-color: green;
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
