@@ -26,9 +26,18 @@ function App() {
     }
   }, [term, secretNum]);
 
+<<<<<<< HEAD
   function handleSecretNum() {
     setSecretNum(Math.floor(Math.random() * 10) + 1);
   }
+=======
+    return(
+      <>
+        <div className="container">
+                <marquee className="head">
+                    Guess the number between 1 to 10
+                </marquee>
+>>>>>>> 6a2396876b337f66d6493fd1b98bddf17951a93c
 
   const handleStart = () => {
     setDisabled(false);
